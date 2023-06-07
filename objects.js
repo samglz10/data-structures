@@ -64,7 +64,7 @@ const likedPostIds = ['A', 'B', 'A', 'C', 'A', 'D', 'F', 'O', 'B', 'B', 'A', 'C'
 let postIdsNumLikes = {
     A: NaN
 };
-
+/*
 postIdsNumLikes['A'] // number | undefined
 
 for(let i =0; i < likedPostIds.length; i++){
@@ -75,6 +75,7 @@ for(let i =0; i < likedPostIds.length; i++){
     } else {
         postIdsNumLikes[postId] = 1;// Set an initial for key if it's not in there already
     }
+    console.log(postIdsNumLikes)
 }
 
 let myNum: number | undefined = 0;
@@ -123,6 +124,7 @@ const scores = [
     ['Rust', 'C']
 ];
 const scoreObj = {};
+
 // In this array, each array inside of it represents a match between two programming languages
 // The one at index 0 is the victor - Typescript > JavaScript
 
@@ -139,4 +141,4 @@ const scoreObj = {
     Rust: 3
 }
 */
-console.log(scoreObj);
+//console.log(scoreObj);

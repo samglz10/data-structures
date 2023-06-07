@@ -85,11 +85,12 @@ const bar3 = "fizz buzzzz fizz".includes("buzz");
 //watch algoexpert, data structures, do memory, arrays and then strings sections. 
 
 //Loop through a string and determine if there are more than, or equal to or, less than 5 L's 
+/*
 const practiceL = "hello worldl";
-/*let base = 0;
-for(let i = 0; i < helloWord.length; i++){
-    let helloIndex = helloWord[i];
-        if (helloIndex === 'l' && base >= 5){
+let base = 0;
+for(let i = 0; i < practiceL.length; i++){
+    let helloIndex = practiceL[i];
+        if (helloIndex === 'l' && base <= 5){
             base ++;
         }  
         else {
@@ -97,15 +98,15 @@ for(let i = 0; i < helloWord.length; i++){
     }
     
 }
-  */
+  
+*/
 
-/*
 function BigCapitals(){
     const BigLL = "practillle big LL";
     let baseDos = 0;
         for(let i = 0; i < BigLL.length; i++){
             let BigLLIndex = BigLL[i];
-                if (BigLLIndex === 'l' || BigLLIndex === BigLL[15].toUpperCase()){
+                if (BigLLIndex === 'l' || BigLLIndex ==='L'){
                     baseDos ++;
                 }  
                 if(baseDos < 6){
@@ -118,7 +119,8 @@ function BigCapitals(){
     }
 
 BigCapitals();
-*/
+
+/*
 
 // Loop through a string and create a new string from a string except that every new vowel is replace with a random one digit whole number
 const randomWords = "The quick brown fox jumps over the lazy dog";
@@ -126,18 +128,21 @@ let vowels = ['a','e','i','o','u'];
 function replaceVowels(){
     let randomNumber = Math.floor(
         Math.random()*10)
-        console.log(randomNumber)
+        console.log('initial random Number',randomNumber)
    for(let i=0; i < vowels.length; i++){
     for (let j = 0; j < randomWords.length; j++){
         if(vowels[i] === randomWords[j]){
             let numToString = randomNumber.toString();
-            console.log(randomWords[j].replace(randomNumber))
+            console.log(numToString);
+            randomWords.replace(randomWords[j],numToString);
+            console.log(randomWords)
         }
     }
    }
    console.log(randomWords)
 }
 replaceVowels();
+
 /*
 "hello worldl"
 "practillle big LL"
