@@ -47,6 +47,7 @@ footballGamesWon.dawgs = 5;
 // Properties can be referenced by putting the object name then .PROPETY_NAME
 footballGamesWon.hogs;
 
+
 // Properties can be modified by referencing a propety and reassigning it
 footballGamesWon.patriots = 1;
 
@@ -111,7 +112,7 @@ if (message?.length > 0) {
 // Watch videos on AlgoExpert
 // Complete strings practice
 // Complete unstructured objects practice
-
+*/
 // Keeping score
 const scores = [
     ['TypeScript', 'JavaScript'], // TypeScript (index 0 ) is victor
@@ -123,7 +124,46 @@ const scores = [
     ['Rust', 'C++'],
     ['Rust', 'C']
 ];
-const scoreObj = {};
+
+// if i === 8, do you want to run the for loop still
+// /8/ scores[8] === undefine
+
+let x = 0;
+
+while (true) {
+    if (x < scores.length) {
+        // do something
+
+    } else {
+        break;
+    }
+
+    x++
+}
+
+
+for (
+    let i = 0; // initializer - to set a counter variable, run once only at the start
+    i < scores.length; // condition - determines if loop will keep going or stop -
+    // runs before the start of each iteration - if it is true then it will run the iteration. if false, exits the for loop
+    i++ // afterthought evaluates at the end of each iteration - will update or increment the counter variable.
+) { // Everytime the code in these yellow brackets runs once, thats called an iteration
+    console.log(i);
+}
+
+for (let i = 0; i < scores.length; i++){
+    const scoreObj = {};
+    let winner = scores[i]
+    if(totalKeys in scoreObj ){ //loops through keys in scoreObj
+        scoreObj[totalKeys] = scoreObj[totalKeys] + 1; //if key exist then add 1
+        //console.log(scoreObj)
+        
+    } else {
+        scoreObj[totalKeys] = 1; //if does not exist, then create key with value of 1
+    }
+    //console.log(scoreObj)
+
+}
 
 // In this array, each array inside of it represents a match between two programming languages
 // The one at index 0 is the victor - Typescript > JavaScript
@@ -141,4 +181,3 @@ const scoreObj = {
     Rust: 3
 }
 */
-//console.log(scoreObj);
