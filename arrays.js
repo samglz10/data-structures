@@ -228,7 +228,7 @@ console.log('added "a" and "b" to end of the list', todos)
 // ['mow lawn', 'get drinks', 'relax']
 
 // code here
-todos = todos.slice(1,4);
+ todos.slice(1,4);
 
 console.log('reassigned to be index 1 through index 3 inclusively', todos);
 

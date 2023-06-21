@@ -182,14 +182,14 @@ const wordMatrix = [
 
 function starWarsQuote(){
   let finalQuote = '';
-  for(let i =0; i < wordMatrix.length; i++){
+  for(let i = 0; i < wordMatrix.length; i++){
     let firstIndex = wordMatrix[i];
     for(let j = 0; j < firstIndex.length; j++){
       let secondIndex = firstIndex[j];
       finalQuote = finalQuote + secondIndex + ' ';
     }
   }
-  console.log(finalQuote)
+  console.log(finalQuote);
 }
 starWarsQuote();
 
@@ -203,3 +203,18 @@ starWarsQuote();
 // Watch Bubble Sort, Insertion Sort, or Selection Sort on AlgoExpert
 
 const words2 = ["these", "aren't", "the", "droids", "you're", "looking", "for."]
+
+function alphaDroids(){
+  for( let i = 0; i < words2.length-1; i++){ //loop through the array lenght -1 because the last number will be the largest
+    let firstIndex = words2[i]; //set variable for 
+    for(let j = 0; j < firstIndex.length; j++){ 
+      let secondIndex = words2[j];
+
+      if(firstIndex > secondIndex){
+        let finalQuote = [firstIndex, secondIndex] = [secondIndex, firstIndex]
+        console.log(finalQuote);
+      }
+    }
+  }
+} alphaDroids();
+
