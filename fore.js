@@ -202,19 +202,39 @@ starWarsQuote();
 
 // Watch Bubble Sort, Insertion Sort, or Selection Sort on AlgoExpert
 
-const words2 = ["these", "aren't", "the", "droids", "you're", "looking", "for."]
+const words2 = ["these","aren't","the","droids","you're","looking","for."]
+//using Bubble Sort
+// compare index[0] and index[1] if not in alphabetically order then we swap them
+//for ex. 
+//compare index[1] and index[2], and so on
+// the last index should be the largest number because the largest number will be swapped until the end
 
-function alphaDroids(){
-  for( let i = 0; i < words2.length-1; i++){ //loop through the array lenght -1 because the last number will be the largest
-    let firstIndex = words2[i]; //set variable for 
-    for(let j = 0; j < firstIndex.length; j++){ 
-      let secondIndex = words2[j];
-
-      if(firstIndex > secondIndex){
-        let finalQuote = [firstIndex, secondIndex] = [secondIndex, firstIndex]
-        console.log(finalQuote);
-      }
+//new function walkthrough
+while (true) {
+  let swap = 0; 
+  for(let i = 0; i < words2.length -1; i++){
+    if (words2[i] > words2[i + 1]){ //compares the first and second index and continues through the array
+      [words2[i],words2[i+1]] = [words2[i+1], words2[i]];// destructure the values 
+      swap += 1;
     }
+  }
+  if(swap === 0){
+    break;
+  }
+}
+  
+console.log(words2)
+//try insertion sort for practice
+function alphaDroids(){
+  const words2 = ["these","aren't","the","droids","you're","looking","for."]
+  let temp;
+  for( let i = 0; i < words2.length-1; i++){ //loop through the array lenght -1 because the last number will be the largest
+    for(let j = 0; j < words2[i].length; j++){ //loop though the character array
+    }
+    if(words2[i][0] > words2[i+1][0]){ //compares the first character of each string;
+      [words2[i], words[i+1]] = [words2[i+1], words2[i]];//swap the characters; 
+    } 
+    temp++;
   }
 } alphaDroids();
 
